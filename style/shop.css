@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/Raleway-Regular.ttf");
+}
+
+body {
+	margin: 0;
+	background-color: #50554a;
+	text-align: center;
+}
+
+body,td,th {
+	font-family: Futura, Century Gothic, AppleGothic, sans-serif;
+	color: white;
+	line-height: 1.5em;
+}
+
+header {
+	position: relative;
+	top: 0;
+}
+
+#barline a:link, #barline a:visited {
+	color: #696969;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#barline a:hover, #barline a:active {
+	background-color: #696969;
+	color: white;
+}
+
+#logo {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 100px;
+	width: 100px;
+}
+
+#barline {
+	position: relative;
+	width: 1210px;
+	margin-top: 45px;
+	background-color: white;
+	color: #696969;
+	text-align: left;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 14px;
+	overflow: hidden;
+	letter-spacing: 1px;
+	float: right;
+}
+
+a {
+	font-size: 13pt;
+}
+
+a.right {
+	float: right;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	color: #352937;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	text-align: left;
+	font-family: Futura, Century Gothic, AppleGothic, sans-serif;
+}
+
+#copyright {
+	padding: 20px 20px;
+	float: left;
+}
+				
+footer a:link, footer a:visited {
+	color: #696969;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+	text-shadow: #9a9a9a 0 0 10px;
+	filter: glow(color=#9a9a9a,strength=3);
+}
+
+#slogan {
+	font-size: 80px;
+	line-height: 1.5em;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+a.onlineshop {
+	font-size: 20px;
+	line-height: 1.5em;
+	font-family: 'Barlow Condensed', sans-serif;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 150px;
+}
+
+#content {
+	width: 1000px;
+  	position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Barlow Condensed', sans-serif;
+}
