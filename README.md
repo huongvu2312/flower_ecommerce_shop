@@ -40,8 +40,13 @@ XAMPP
 
 ## Live action
 
+**User Interface**
+
 ![User GIF](https://media.giphy.com/media/XZUNOZZLszCXTPlRJ8/giphy.gif)
 
+**Admin Interface**
+
+![Admin GIF](https://media.giphy.com/media/QXJGFpYw5K4lOaqFoj/giphy.gif)
 
 ## License
 
