@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "vthblumen";
+$password = "";
 $db = "vthblumen";
 
 // Create connection

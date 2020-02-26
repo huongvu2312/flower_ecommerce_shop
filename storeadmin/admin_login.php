@@ -13,19 +13,22 @@ header('Content-Type: text/html; charset=UTF-8');
 if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 	$manager = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["username"]); // filter everything but numbers and letters
-    $password = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password"]); // filter everything but numbers and letters
+    $pass = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password"]); // filter everything but numbers and letters
+	
     // Connect to the MySQL database  
     include "../storescripts/db_connection.php"; 
-    $sql = mysqli_query($conn, "SELECT id FROM admin WHERE username='$manager' AND password='$password' LIMIT 1"); // query the person
+    $sql = mysqli_query($conn, "SELECT id FROM admin WHERE username='$manager' AND password='$pass' LIMIT 1"); // query the person
     // ------- MAKE SURE PERSON EXISTS IN DATABASE ---------
     $existCount = mysqli_num_rows($sql); // count the row nums
+	
     if ($existCount == 1) { // evaluate the count
 	     while($row = mysqli_fetch_array($sql)){ 
              $id = $row["id"];
 		 }
+		 
 		 $_SESSION["id"] = $id;
 		 $_SESSION["manager"] = $manager;
-		 $_SESSION["password"] = $password;
+		 $_SESSION["password"] = $pass;
 		 header("location: index.php");
          exit();
     } else {
@@ -46,7 +49,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 	<link rel="stylesheet" type="text/css" href="../style/index.css" media="screen" />
 </head>
 <body>
-	<?php include_once '../template_header.php';?><br><br><br>
+	<?php include_once 'template_header4.php';?><br><br><br>
 	<div id="content"><br><br><br><br><br>
 		<h1>Bitte melden Sie sich an, um den Shop zu verwalten</h1><br>
 		<form id="form1" name="form1" method="post" action="admin_login.php">
