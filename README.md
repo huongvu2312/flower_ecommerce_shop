@@ -38,7 +38,7 @@ XAMPP
 * HTML5
 * CSS3
 
-## Live action
+## Live demo
 
 **User Interface**
 
